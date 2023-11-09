@@ -4,17 +4,17 @@
 */
 
 enum WeekDays {
-    Monday = 0,
-    Tuesday = 0,
-    Wednesday = 0,
-    Thursday = 0,
-    Friday = 0,
-    Saturday = 1,
-    Sunday = 1,
+    Monday ,
+    Tuesday ,
+    Wednesday ,
+    Thursday ,
+    Friday ,
+    Saturday ,
+    Sunday ,
 }
 
-const isWeekend = (weekDay: number): boolean => {
- return  !!weekDay
+const isWeekend = (weekDay: WeekDays): boolean => {
+ return  weekDay === WeekDays.Saturday || weekDay === WeekDays.Sunday
 
 };
 
